@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ehouse.elive.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_menu"
+            />
+
+
+        <Button
+            android:id="@+id/btn_swith"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_sw_camera"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_push"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_video_stop"
+            android:layout_marginLeft="8dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推流连接中"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textSize="14dp"
+        android:textColor="#272727"/>
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭推流中"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:textSize="14dp"
+        android:textColor="#272727"/>
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#272727"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="操作频繁,稍后重试"
+        />
+</RelativeLayout>
